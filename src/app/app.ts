@@ -1,12 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Users } from './components/users';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  imports: [Users],
+  template: `
+
+    <app-users />
+  `,
 })
-export class App {
-  protected readonly title = signal('ic-maggio-2026');
-}
+export class App {}
