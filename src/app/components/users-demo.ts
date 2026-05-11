@@ -5,7 +5,7 @@ import { Post } from '../models/post';
 import { environment as env } from '../../environments/environment';
 
 @Component({
-  selector: 'app-users',
+  selector: 'app-users-demo',
   template: `
     @if (usersResource.isLoading()) {
       Loading...
@@ -31,7 +31,7 @@ import { environment as env } from '../../environments/environment';
     </ul>
   `,
 })
-export class Users {
+export class UsersDemo {
   usersResource = httpResource<User[]>(() => `${env.apiUrl}/users`);
 
   currentUserId = signal<User['id'] | null>(null);

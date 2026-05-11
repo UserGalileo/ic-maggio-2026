@@ -28,6 +28,8 @@
           },
           "configurations": {
             "production": {
+              "sourceMap": true,
+              "namedChunks": true,
               "budgets": [
                 {
                   "type": "initial",
