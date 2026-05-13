@@ -1,7 +1,7 @@
-import { Component, computed, inject, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { httpResource } from '@angular/common/http';
 import { environment as env } from '../../../environments/environment';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { JsonPipe } from '@angular/common';
 import { User as IUser } from '../../models/user';
 
